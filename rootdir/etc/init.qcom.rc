@@ -29,9 +29,6 @@ import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
 import /vendor/etc/init/hw/init.cust.rc
 import /vendor/etc/init/hw/init.oplus.display.rc
-import /odm/etc/init/hw/init.oplus.wifi.rc
-import /vendor/etc/init/hw/init.wlan.qcom.rc
-#import /odm/etc/init/init.oppo.reserve.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
