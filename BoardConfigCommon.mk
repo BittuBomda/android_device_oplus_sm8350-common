@@ -48,11 +48,10 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_SEPARATED_DTBO := true
+#BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
-TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
+TARGET_KERNEL_SOURCE := kernel/oplus/sm8350
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
@@ -181,7 +180,7 @@ SOONG_CONFIG_ONEPLUS_POWERSHARE := WIRELESS_TX_ENABLE_PATH
 SOONG_CONFIG_ONEPLUS_POWERSHARE_WIRELESS_TX_ENABLE_PATH := /sys/class/oplus_chg/wireless/trx_online
 
 # Recovery
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
