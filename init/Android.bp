@@ -102,3 +102,9 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "odm_modprobe.sh",
+    src: "odm_modprobe.sh",
+    vendor: true,
+}

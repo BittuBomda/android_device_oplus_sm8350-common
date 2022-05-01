@@ -310,6 +310,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
+    odm_modprobe.sh \
     ueventd.oplus.rc \
     ueventd.qcom.rc
 
