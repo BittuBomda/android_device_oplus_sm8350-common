@@ -54,6 +54,8 @@ si2157.ko
 slimbus.ko
 slimbus-ngd.ko
 snd_event_dlkm.ko
+st21nfc.ko
+st54spi.ko
 stub_dlkm.ko
 swr_ctrl_dlkm.ko
 swr_dlkm.ko
