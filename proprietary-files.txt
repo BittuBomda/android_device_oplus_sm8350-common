@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.C.48).
+## from OnePlus 9RT OnePlus/MT2111_IND/OP5155L1:12/RKQ1.211119.001/1653989534417:user/release-keys .
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
